@@ -1,0 +1,523 @@
+
+/*              ESTILOS DE MUNDO GAMER               */
+
+
+/* FONDO GENERAL DE LA PÁGINA */
+
+
+/* html representa toda la página */
+html {
+    /* Color de fondo por si alguna zona no tiene otro fondo */
+    background-color: #080808;
+}
+
+
+/* body contiene todo el contenido de nuestra página */
+body {
+    /* Tipo de letra de toda la página */
+    font-family: Arial, sans-serif;
+
+    /* Eliminamos el margen que pone el navegador automáticamente */
+    margin: 0;
+
+    /* El contenido ocupará como mínimo toda la pantalla */
+    min-height: 100vh;
+
+    /* Fondo oscuro con un pequeño efecto morado */
+    background:
+        radial-gradient(circle at top, #35105c 0%, transparent 35%),
+        linear-gradient(135deg, #050505, #171717 50%, #080808);
+
+    /* Color de los textos */
+    color: white;
+}
+
+
+
+/* ENCABEZADO */
+
+
+/* Parte superior de la página */
+header {
+    /* Fondo morado oscuro */
+    background: linear-gradient(135deg, #17002b, #55169b);
+
+    /* Centra todo el contenido */
+    text-align: center;
+
+    /* Espacio dentro del encabezado */
+    padding: 30px 20px 35px;
+
+    /* Línea morada debajo del encabezado */
+    border-bottom: 3px solid #a855f7;
+
+    /* Sombra debajo */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+}
+
+
+/* Logo de la página */
+.logo {
+    /* Tamaño del emoji */
+    font-size: 55px;
+
+    /* Espacio debajo del emoji */
+    margin-bottom: 5px;
+}
+
+
+/* Título principal */
+header h1 {
+    /* Tamaño de las letras */
+    font-size: 45px;
+
+    /* Eliminamos el margen */
+    margin: 0;
+
+    /* Color blanco */
+    color: white;
+
+    /* Espacio entre las letras */
+    letter-spacing: 4px;
+
+    /* Sombra para darle estilo */
+    text-shadow: 0 0 15px #a855f7;
+}
+
+
+/* Texto debajo del título */
+header p {
+    /* Tamaño del texto */
+    font-size: 18px;
+
+    /* Espacio arriba */
+    margin-top: 12px;
+
+    /* Color gris claro */
+    color: #dddddd;
+}
+
+
+
+/* CONTENIDO PRINCIPAL */
+
+
+/* Zona donde están los videojuegos y multimedia */
+main {
+    /* IMPORTANTE: no ponemos fondo blanco */
+    background: transparent;
+
+    /* Espacio arriba y abajo */
+    padding: 55px 20px;
+}
+
+
+
+/* TÍTULO DE VIDEOJUEGOS */
+
+
+.titulo-seccion {
+    /* Centra el título */
+    text-align: center;
+
+    /* Tamaño del título */
+    font-size: 30px;
+
+    /* Color morado */
+    color: #c084fc;
+
+    /* Espacio debajo */
+    margin-bottom: 40px;
+
+    /* Sombra morada */
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.7);
+}
+
+
+
+/* TARJETAS DE VIDEOJUEGOS */
+
+
+/* Contenedor de las tarjetas */
+.juegos {
+    /* Activamos Flexbox */
+    display: flex;
+
+    /* Centramos las tarjetas */
+    justify-content: center;
+
+    /* Permitimos que bajen de línea */
+    flex-wrap: wrap;
+
+    /* Espacio entre tarjetas */
+    gap: 30px;
+}
+
+
+/* Cada tarjeta individual */
+.juego {
+    /* Fondo gris muy oscuro */
+    background: linear-gradient(145deg, #1c1c1c, #101010);
+
+    /* Ancho de cada tarjeta */
+    width: 280px;
+
+    /* Bordes redondeados */
+    border-radius: 16px;
+
+    /* Evita que la imagen se salga de las esquinas */
+    overflow: hidden;
+
+    /* Borde gris */
+    border: 1px solid #333333;
+
+    /* Sombra */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+
+    /* Hace suave la animación */
+    transition: 0.3s;
+}
+
+
+/* Efecto cuando pasamos el mouse sobre una tarjeta */
+.juego:hover {
+    /* La tarjeta sube un poco */
+    transform: translateY(-10px);
+
+    /* El borde se vuelve morado */
+    border-color: #a855f7;
+
+    /* Aparece una sombra morada */
+    box-shadow: 0 12px 30px rgba(168, 85, 247, 0.4);
+}
+
+
+
+/* IMÁGENES DE LOS VIDEOJUEGOS */
+
+
+.juego img {
+    /* La imagen ocupa todo el ancho */
+    width: 100%;
+
+    /* Altura de la imagen */
+    height: 180px;
+
+    /* Evita que la imagen se deforme */
+    object-fit: cover;
+
+    /* La imagen se muestra como bloque */
+    display: block;
+}
+
+
+
+/* CONTENIDO DE LAS TARJETAS */
+
+
+.contenido-juego {
+    /* Espacio dentro de la tarjeta */
+    padding: 20px;
+}
+
+
+/* Nombre del videojuego */
+.contenido-juego h3 {
+    /* Color morado */
+    color: #c084fc;
+
+    /* Tamaño */
+    font-size: 25px;
+
+    /* Eliminamos el margen superior */
+    margin-top: 0;
+
+    /* Espacio debajo */
+    margin-bottom: 10px;
+}
+
+
+/* Descripción del videojuego */
+.contenido-juego p {
+    /* Color gris claro */
+    color: #cccccc;
+
+    /* Tamaño del texto */
+    font-size: 15px;
+
+    /* Espacio entre las líneas */
+    line-height: 1.5;
+
+    /* Altura mínima para que las tarjetas se vean parejas */
+    min-height: 65px;
+}
+
+
+
+/* BOTONES */
+
+
+button {
+    /* Fondo morado */
+    background: linear-gradient(135deg, #6c2bd9, #9333ea);
+
+    /* Texto blanco */
+    color: white;
+
+    /* Quitamos el borde */
+    border: none;
+
+    /* Espacio dentro del botón */
+    padding: 100px 100px;
+
+    /* Bordes redondeados */
+    border-radius: 20px;
+
+    /* Cambia el cursor */
+    cursor: pointer;
+
+    /* Letras más gruesas */
+    font-weight: bold;
+
+    /* Espacio arriba */
+    margin-top: 10px;
+
+    /* Hace suave el efecto */
+    transition: 0.3s;
+}
+
+
+/* Cuando pasamos el mouse sobre el botón */
+button:hover {
+    /* El botón se hace un poco más grande */
+    transform: scale(1.05);
+
+    /* Fondo morado más claro */
+    background: linear-gradient(135deg, #9333ea, #c084fc);
+
+    /* Sombra morada */
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.6);
+}
+
+
+
+/* SECCIÓN MULTIMEDIA */
+
+
+.multimedia {
+    /* Centra los títulos */
+    text-align: center;
+
+    /* Espacio arriba */
+    margin-top: 80px;
+
+    /* Espacio abajo */
+    margin-bottom: 30px;
+}
+
+
+/* Título de la sección multimedia */
+.multimedia h2 {
+    /* Tamaño */
+    font-size: 30px;
+
+    /* Color morado */
+    color: #c084fc;
+
+    /* Sombra */
+    text-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+}
+
+
+/* Texto debajo del título */
+.texto-multimedia {
+    /* Color gris */
+    color: #bbbbbb;
+
+    /* Espacio debajo */
+    margin-bottom: 30px;
+}
+
+
+
+/* VIDEO Y AUDIO */
+
+
+/* Contenedor del video y el audio */
+.multimedia-contenedor {
+    /* Activamos Flexbox */
+    display: flex;
+
+    /* Los colocamos en el centro */
+    justify-content: center;
+
+    /* Espacio entre ambos */
+    gap: 30px;
+
+    /* Si no caben, pueden bajar */
+    flex-wrap: wrap;
+
+    /* Alinea las cajas */
+    align-items: stretch;
+}
+
+
+/* Caja que contiene el video o audio */
+.media-box {
+    /* Fondo gris oscuro */
+    background: linear-gradient(145deg, #1b1b1b, #0e0e0e);
+
+    /* Ancho de la caja */
+    width: 450px;
+
+    /* No permite que sea demasiado grande */
+    max-width: 90%;
+
+    /* Espacio interior */
+    padding: 25px;
+
+    /* Bordes redondeados */
+    border-radius: 16px;
+
+    /* Borde */
+    border: 1px solid #333333;
+
+    /* Sombra */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+
+    /* Hace suaves los efectos */
+    transition: 0.3s;
+
+    /* Para que el tamaño no se salga */
+    box-sizing: border-box;
+}
+
+
+/* Efecto al pasar el mouse sobre video/audio */
+.media-box:hover {
+    /* Borde morado */
+    border-color: #9333ea;
+
+    /* Sombra morada */
+    box-shadow: 0 10px 30px rgba(147, 51, 234, 0.3);
+}
+
+
+/* Títulos de las cajas multimedia */
+.media-box h3 {
+    /* Color morado */
+    color: #c084fc;
+
+    /* Tamaño */
+    font-size: 21px;
+
+    /* Espacio debajo */
+    margin-bottom: 20px;
+}
+
+
+
+/* VIDEO */
+
+
+video {
+    /* Ocupa todo el ancho de su caja */
+    width: 100%;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+    /* Fondo negro */
+    background-color: #000000;
+
+    /* Se comporta como bloque */
+    display: block;
+}
+
+
+
+/* AUDIO */
+
+
+audio {
+    /* Ocupa todo el ancho disponible */
+    width: 100%;
+
+    /* Espacio arriba */
+    margin-top: 20px;
+}
+
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    /* Fondo negro */
+    background-color: #white;
+
+    /* Centra el texto */
+    text-align: center;
+
+    /* Espacio interior */
+    padding: 25px;
+
+    /* Línea morada arriba */
+    border-top: 2px solid #6c2bd9;
+
+    /* Color del texto */
+    color: #999999;
+
+    /* Sombra */
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Texto del pie de página */
+footer p {
+    /* Espacio pequeño entre los textos */
+    margin: 5px;
+}
+
+
+
+/* DISEÑO PARA CELULARES */
+
+
+/* Estos cambios se aplican cuando la pantalla es pequeña */
+@media (max-width: 600px) {
+
+    /* Reducimos el título principal */
+    header h1 {
+        font-size: 32px;
+    }
+
+
+    /* Reducimos el logo */
+    .logo {
+        font-size: 45px;
+    }
+
+
+    /* Reducimos el título de videojuegos */
+    .titulo-seccion {
+        font-size: 24px;
+    }
+
+
+    /* Las tarjetas ocupan casi toda la pantalla */
+    .juego {
+        width: 90%;
+    }
+
+
+    /* Las cajas de video y audio ocupan casi todo el ancho */
+    .media-box {
+        width: 90%;
+    }
+
+
+    /* Reducimos el tamaño del título multimedia */
+    .multimedia h2 {
+        font-size: 25px;
+    }
+}
