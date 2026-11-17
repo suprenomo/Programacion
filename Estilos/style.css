@@ -521,3 +521,17 @@ footer p {
         font-size: 25px;
     }
 }
+
+.dato {
+    text-align: center;
+    background: #1c1c1c;
+    padding: 25px;
+    margin: 40px auto;
+    border-radius: 15px;
+    max-width: 700px;
+    border: 2px solid #a855f7;
+}
+
+.dato h2 {
+    color: #c084fc;
+}
